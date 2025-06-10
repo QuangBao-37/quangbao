@@ -1,1 +1,112 @@
-/* Nội dung CSS sẽ được chèn sau */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #000000, #1a1a1a);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding-top: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.avatar-wrapper {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid limegreen;
+  box-shadow: 0 0 20px limegreen;
+}
+
+.avatar-wrapper.fire-ring {
+  animation: fire 1.5s infinite alternate;
+}
+
+@keyframes fire {
+  0% { box-shadow: 0 0 20px red; }
+  50% { box-shadow: 0 0 25px orange; }
+  100% { box-shadow: 0 0 20px yellow; }
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.verified {
+  color: #0af;
+}
+
+.status, .bio, .link {
+  margin: 10px 0;
+}
+
+.link a {
+  color: #0af;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.link a:hover {
+  text-shadow: 0 0 10px #0af;
+}
+
+.clock {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.dice-area {
+  margin-top: 30px;
+}
+
+.dice {
+  font-size: 40px;
+  display: inline-block;
+  margin: 0 10px;
+  animation: bounce 1s infinite alternate;
+}
+
+.red { color: red; }
+.green { color: lime; animation-delay: 0.2s; }
+.blue { color: cyan; animation-delay: 0.4s; }
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-15px); }
+}
+
+.moving-text {
+  animation: moveText 6s linear infinite alternate;
+  font-size: 24px;
+  color: yellow;
+}
+
+@keyframes moveText {
+  0% { transform: translateX(-30%); }
+  100% { transform: translateX(30%); }
+}
+
+.chat-bubble {
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 30px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
