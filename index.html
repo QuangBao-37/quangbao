@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập bằng Google</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <form action="/login" method="POST">
+        <h3>Đăng nhập thủ công</h3>
+        <input name="username" placeholder="Username" required />
+        <br>
+        <input type="password" name="password" placeholder="Password" required />
+        <br>
+        <button type="submit">Đăng nhập</button>
+    </form>
+    <hr>
+
+  <div class="login-container">
+    <h2>Chào mừng!</h2>
+    <a href="/auth/google"><button>Đăng nhập với Google</button></a>
+  </div>
+
+    <br><br>
+    <a href="/auth/facebook"><button style="background-color:#3b5998">Đăng nhập với Facebook</button></a>
+
+</body>
+</html>
