@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quang Bảo Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="background.mp4" type="video/mp4">
+  </video>
+
+  <img src="avatar.jpg" class="avatar-image" alt="Avatar" />
+
+  <div id="datetime-display"></div>
+
+  <div class="about-me"><p>@byquangbaoprofilewall07</p></div>
+
+  <div class="music-control">
+    <button id="music-toggle" onclick="toggleMusic()">🎵</button>
+  </div>
+
+  <div class="theme-toggle-container">
+    <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+  </div>
+
+  <div class="social-links">
+    <a href="https://www.facebook.com/quangbao258" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"/>
+    </a>
+    <a href="https://www.tiktok.com/@quangbao_123" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"/>
+    </a>
+  </div>
+
+  <canvas id="snow-canvas"></canvas>
+
+  <audio id="background-music" src="music.mp3" loop></audio>
+
+  <script src="script.js"></script>
+  <script src="snow.js"></script>
+</body>
+</html>
